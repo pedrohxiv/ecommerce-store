@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Aplicação de uma página de Venda de E-commerce
 
-## Getting Started
+Esta é a página de venda do E-commerce desenvolvida em TypeScript, utilizando Next.js e Tailwind CSS em conjunto com o Shadcn/ui para estilização.
 
-First, run the development server:
+A página de vendas se comunica com a página de administração, onde o projeto está localizado neste [repositório](https://github.com/pedrohxiv/ecommerce-admin), para um funcionamento completo da aplicação.
 
-```bash
+## Descrição
+
+Esta página de venda é parte integrante do E-commerce, proporcionando aos usuários uma experiência intuitiva e atraente ao navegar e comprar produtos. Ela foi construída com tecnologias modernas, como React e Next.js, para garantir uma experiência de usuário responsiva e de alto desempenho.
+
+O Tailwind CSS, aliado ao Shadcn/ui, é utilizado para criar uma interface estilizada, com componentes prontos para uso que agilizam o desenvolvimento e garantem uma aparência visualmente agradável.
+
+## Funcionalidades
+
+- Visualização detalhada do produto, incluindo imagem, preço, descrição e detalhes relevantes.
+- Adição do produto ao carrinho de compras com opções de quantidade selecionáveis.
+- Navegação intuitiva e responsiva para uma experiência de usuário fluida em dispositivos desktop e móveis.
+- Integração com Stripe para realização da venda dos produtos.
+
+## Pré-requisitos
+
+Antes de visualizar a página de venda do E-commerce, certifique-se de ter as seguintes dependências instaladas:
+
+- Node.js
+- npm ou Yarn
+
+## Instalação
+
+1. Faça o clone deste repositório para o seu ambiente local.
+2. Navegue até o diretório do projeto no terminal.
+3. Execute o comando `npm install` ou `yarn install` para instalar as dependências do projeto.
+
+## Configuração
+
+Antes de iniciar a aplicação, você precisará configurar as seguintes variáveis de ambiente:
+
+- `NEXT_PUBLIC_API_URL`: URL da sua página de administração para a realização do checkout do carrinho de compras.
+
+Certifique-se de criar um arquivo `.env` na raiz do projeto e adicionar as variáveis de ambiente necessárias.
+
+## Uso
+
+Após a instalação, execute o seguinte comando para iniciar a página de venda:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Isso iniciará o servidor de desenvolvimento do Next.js e você poderá acessar a página de venda do E-commerce no seu navegador através do endereço `http://localhost:3001`.
